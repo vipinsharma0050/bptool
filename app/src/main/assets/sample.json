@@ -1,0 +1,84 @@
+{
+  "Encryption_alogrithm": [
+    {
+      "RSA": [
+        {
+          "key_size": [
+            "512",
+            "1024",
+            "2048"
+          ]
+        }
+      ],
+      "DES": [
+        {
+          "padding_type": [
+            "ISO9797-1 (paddind mode 1)",
+            "ISO9797 (padding mode 2))",
+            "None",
+            "Zeros",
+            "Spaces",
+            "ANSI X9.23",
+            "PKSCS#5",
+            "PKSCS#7"
+          ]
+        }
+      ],
+      "TDES": [
+        {
+          "mode": [
+            "ECB",
+            "CBC"
+          ],
+          "padding_type": [
+            "ISO9797-1 (paddind mode 1)",
+            "ISO9797 (padding mode 2))",
+            "None",
+            "Zeros",
+            "Spaces",
+            "ANSI X9.23",
+            "PKSCS#5",
+            "PKSCS#7"
+          ]
+        }
+      ],
+      "AES": [
+        {
+          "bit_size": [
+            "128",
+            "192",
+            "256"
+          ],
+          "mode": [
+            "ECB",
+            "CBC"
+          ]
+        }
+      ]
+    }
+  ],
+  "Hash_algorith": [
+    {
+      "MD_hash": [
+        "MD4",
+        "MD5"
+      ],
+      "SHA_hash": [
+        "SHA-1",
+        "SHA-224",
+        "SHA-226",
+        "SHA-382",
+        "SHA-512"
+      ],
+      "CRC_hash": [
+        "CRC8",
+        "CRC16",
+        "CRC32"
+      ],
+      "Generic_hash": [
+        "BASE64"
+      ],
+      "": {}
+    }
+  ]
+}
