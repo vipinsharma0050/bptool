@@ -21,7 +21,7 @@ class MDHashAdapter(var context: Context, var list: List<String>) : RecyclerView
 
     override fun onBindViewHolder(
         holder: ViewHolder, position: Int) {
-        holder.title.text = list!![position]
+        holder.title.text = list[position]
     }
 
     class ViewHolder(itemView: View)  : RecyclerView.ViewHolder(itemView) {
@@ -32,11 +32,7 @@ class MDHashAdapter(var context: Context, var list: List<String>) : RecyclerView
     }
 
     override fun getItemCount(): Int {
-//         if (list.size >=1){
-//            return  0
-//        }else{
-        return list!!.size
-        //}
+        return list.size
 
     }
 }

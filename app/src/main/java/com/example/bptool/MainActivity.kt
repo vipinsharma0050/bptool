@@ -69,7 +69,7 @@ class MainActivity : AppCompatActivity() {
                     combinedListData.add(CombinedTitle("BIT_SIZE" , response.encrption!!.get(i).AES?.get(j)?.bit_size!!))
                     listTitle.add(ListTitle("AES",combinedListData, myList, emptyList(), true))
 
-                    combinedListDataRSA.add(CombinedTitle("Key Size" , response.encrption!!.get(i).RSA?.get(j)?.key_size!!))
+                   /* combinedListDataRSA.add(CombinedTitle("Key Size" , response.encrption!!.get(i).RSA?.get(j)?.key_size!!))
                     listTitle.add(ListTitle("RSA",combinedListDataRSA, myListRSA, emptyList(), true))
 
                     combinedListDataTDES.add(CombinedTitle("MODE" , response.encrption!!.get(i).TDES?.get(j)?.mode!!))
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
 
                     combinedListDataDES.add(CombinedTitle("Padding" , response.encrption!!.get(i).DES?.get(j)?.padding_type!!))
                     listTitle.add(ListTitle("DES",combinedListDataDES, myListDES, emptyList(), true))
-                    
+              */
 
                 }
             }

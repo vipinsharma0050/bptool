@@ -10,7 +10,11 @@ import androidx.recyclerview.widget.RecyclerView
 
 class DataItemAdapter(var context: Context, private var list: ArrayList<ListTitle>) : RecyclerView.Adapter<DataItemAdapter.ViewHolder>()  {
     private var mExpandedPosition = -1
+   /* private var listitem = ArrayList<String>()
+     private val lazyList by lazy {
+         listitem
 
+     }*/
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -32,7 +36,9 @@ class DataItemAdapter(var context: Context, private var list: ArrayList<ListTitl
         holder.title.setOnClickListener {
             for (i in 0 until list.get(position).combined.size){
                 if (!list.get(position).modeHash){
+                   // lazyList.addAll(list.get(position).mode!!)
                     val adapter = MDHashAdapter(context , list.get(position).mode!!)
+                  //  val adapter = MDHashAdapter(context , lazyList)
                     holder.recyclerview.adapter = adapter
                 }else{
                     val adapter = DataItemAdapterNested(context , list.get(position).combined)
@@ -53,11 +59,6 @@ class DataItemAdapter(var context: Context, private var list: ArrayList<ListTitl
     }
 
     override fun getItemCount(): Int {
-//         if (list.size >=1){
-//            return  0
-//        }else{
             return list.size
-        //}
-
     }
 }
